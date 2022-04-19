@@ -24,6 +24,7 @@
                                               ........             
 
 ## About The Project JSDevil
+## This is still not stable and experimental.
 
 There are many versions of Javascript but few take the leap into functional programming realm and this language solves this issue.
 There are seven fundamental Tenents of DevilJS that distinguish it from others. 
@@ -39,16 +40,14 @@ Seven Tenants of DevilJS:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 ## Getting Started
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
+### Install
 * npm
   ```
-  npm install npm@latest -g
+  npm install jsdevil
   ```
 
 ## Roadmap
@@ -72,7 +71,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->

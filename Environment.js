@@ -13,9 +13,29 @@
 
 class Environments {
 
+    constructor(record = {}, parent=null) {
+        this.record = record;
+        this.parent = parent;
+    }
+
+    define(name, value) {
+        this.record[name] = value;
+        return value;
+    }
+
+    assign(name, value) {
+        this.resolve(name).record[name] = value;
+        return value;
+    }
+
+    lookup(name) {
+        return this.resolve(name).record[name];
+    }
 
 
-
+    resolve(name) {
+        // TODO: Implement this
+    }
 
 
 }
