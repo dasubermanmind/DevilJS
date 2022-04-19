@@ -29,7 +29,7 @@ There are many versions of Javascript but few take the leap into functional prog
 There are seven fundamental Tenents of DevilJS that distinguish it from others. 
 
 Seven Tenants of DevilJS:
-1) One should strive to think functionally and with compassion towards all Monods and Functors in accordance with reason.
+1) One should strive to think functionally and with compassion towards all Monads and Functors in accordance with reason.
 1) The struggle for Justice is an ongoing and necessary pursuit that should make all algebraic types first class citizens.
 1) Ones variables are immutable, subject to ones own will alone
 1) The freedoms of others to write lesser forms of javascript should be respected, including the freedom to offend them. To willfully and unjustly write vanilla js encroaches upon the freedoms of another is to forgo ones own.
