@@ -1,4 +1,5 @@
-     .............                                           
+
+                                            .............                                           
                                        ......................                                       
                                     ...''.......     ......''...                                    
                                   ..'''..                  ..'''..                                  
@@ -24,42 +25,35 @@
 
 ## About The Project
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+There are many versions of Javascript but few take the leap into functional programming realm and this language solves this issue.
+There are seven fundamental Tenents of DevilJS that distinguish it from others. 
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Seven Tenants of DevilJS:
+1) One should strive to think functionally and with compassion towards all Monods and Functors in accordance with reason.
+1) The struggle for Justice is an ongoing and necessary pursuit that should make all algebraic types first class citizens.
+1) Ones variables are immutable, subject to ones own will alone
+1) The freedoms of others to write lesser forms of javascript should be respected, including the freedom to offend them. To willfully and unjustly write vanilla js encroaches upon the freedoms of another is to forgo ones own.
+1) Types should conform to ones best scientific understanding of the world. One should take care never to distort scientific facts to fit one's beliefs
+1) Programmers are fallable. If one makes a poor PR, one should do the best to rectify it and resolve any failing pipelines that might have been triggered.
+1) Every tenet is a guiding princple designed to inspire nobility in action and thought. The spirit of compassion, wisdom, and justice should always prevail over the written code.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## Getting Started
-
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
 This is an example of how to list things you need to use the software and how to install them.
 * npm
-  ```sh
+  ```
   npm install npm@latest -g
   ```
 
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [] WIP 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
