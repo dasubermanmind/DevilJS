@@ -1,0 +1,69 @@
+This parser is just that a parser. It gives us a stream of tokens (intermediate form) in which those tokens go through syntactic analysis (ie is this valid code?) 
+which then gives us an AST (abstract syntax tree). There's no actual execution at this stage
+all the execution happens at runtime. 
+
+Take an example. 
+
+
+int x = 10 * 5 + y, this gets broken down into a tree like this.
+
+Right hand side || Left Hand side
+               = 
+           |       \
+           x        +
+                   |  |
+                   *   y
+                   ||
+                  10 5 
+                   
+Parsers are given in two types. Hand written parsers & Automatically genereated parsers
+
+* Recursive-descent parsers
+
+
+----------------------------------------------------------------------------------------
+A)
+Run time semantics
+
+Javascript code example
+
+const data = 'JS';
+function printData(){ console.log(data);}
+printData(); // this print `JS`
+
+Same Code in Php
+
+<?php
+$data = "PHP";
+
+function printData(){print($data)}
+printData(); // ERROR!!!
+
+
+Why? 
+In js all functions are closures so it captures symbols. In php there's more work to be done in order to make that happen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
