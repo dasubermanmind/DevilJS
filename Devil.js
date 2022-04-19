@@ -29,3 +29,5 @@ class Devil {
     }
 
 }
+
+module.exports = Devil;
