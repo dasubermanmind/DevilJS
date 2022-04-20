@@ -24,7 +24,7 @@
                                               ........             
 
 ## About The Project JSDevil
-## This is still not stable and experimental.
+## This is still not stable and still experimental.
 
 There are many versions of Javascript but few take the leap into functional programming realm and this language solves this issue.
 There are seven fundamental Tenents of DevilJS that distinguish it from others. 
@@ -52,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Roadmap
 
-- [] WIP 
+- [] TBD
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

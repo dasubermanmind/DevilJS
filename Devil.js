@@ -37,7 +37,7 @@ class Devil {
             return this.eval(exp[1]) + this.eval(exp[2]);
         }
 
-        throw 'Not implemented yet. Devils can only work so fast. Please be patient.';
+        throw 'Not implemented yet. The Devil can only work so fast. Please be patient.';
     }
 
     
@@ -66,7 +66,6 @@ function isString(exp) {
 
 
 // TODO: Move these to its own test dir
-//
 // For now this is fine for local dev
 
 const devil = new Devil();
