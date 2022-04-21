@@ -6,7 +6,7 @@ module.exports = devil => {
 
       ['dev', 'counter', 0],
 
-      ['while', ['<', 'counter', 10],
+      ['while', ['<=', 'counter', 10],
         // counter++
         // TODO: implement ['++', <Exp>]
         ['set', 'counter', ['+', 'counter', 1]],

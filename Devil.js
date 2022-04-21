@@ -10,7 +10,7 @@ class Devil {
 
      constructor(global = new Enviroment(), parent=null) {
          this.global = global;
-    }
+     }
 
     eval(exp, env=this.global) {
 
@@ -141,5 +141,8 @@ function isString(exp) {
 function isVariableName(exp) {
     return typeof exp === 'string' && /^[a-zA-Z][a-zA-Z0-9_]*$/.test(exp);
 }
+
+
+//TODO: Set all Global enviroments herei
 
 module.exports = Devil;
