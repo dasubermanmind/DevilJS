@@ -26,14 +26,14 @@
 ## About The Project JSDevil
 ## This is still not stable and still experimental.
 
-There are many versions of Javascript but few take the leap into functional programming realm and this language solves this issue.
+There are many programming languages but few take the leap into functional programming realm and this language solves this issue.
 There are seven fundamental Tenents of DevilJS that distinguish it from others. 
 
-Seven Tenants of DevilJS:
+Seven Tenants of JSDevil:
 1) One should strive to think functionally and with compassion towards all Monads and Functors in accordance with reason.
 1) The struggle for Justice is an ongoing and necessary pursuit that should make all algebraic types first class citizens.
 1) Ones variables are immutable, subject to ones own will alone
-1) The freedoms of others to write lesser forms of javascript should be respected, including the freedom to offend them. To willfully and unjustly write vanilla js encroaches upon the freedoms of another is to forgo ones own.
+1) The freedoms of others to write lesser forms of code should be respected, including the freedom to offend them. To willfully and unjustly write poor code encroaches upon the freedoms of another is to forgo ones own.
 1) Types should conform to ones best scientific understanding of the world. One should take care never to distort scientific facts to fit one's beliefs
 1) Programmers are fallable. If one makes a poor PR, one should do the best to rectify it and resolve any failing pipelines that might have been triggered.
 1) Every tenet is a guiding princple designed to inspire nobility in action and thought. The spirit of compassion, wisdom, and justice should always prevail over the written code.
