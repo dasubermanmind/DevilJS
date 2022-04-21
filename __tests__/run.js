@@ -6,6 +6,8 @@ const tests = [
   require('./math-test.js'),
   require('./variable-test.js'),
   require('./block-test.js'),
+  require('./if-test'),
+  require('./iterations-test'),
   ];
 
 const devil = new Devil(new Environment({

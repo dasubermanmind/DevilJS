@@ -34,6 +34,22 @@ class Devil {
             return this.eval(exp[1], env) / this.eval(exp[2], env);
         }
 
+        if( exp[0] === '<') {
+            return this.eval(exp[1], env) < this.eval(exp[2], env);
+        }
+
+        if (exp[0] === '>') {
+            return this.eval(exp[1], env) > this.eval(exp[2], env);
+        }
+
+        if (exp[0] === '<=') {
+            return this.eval(exp[1], env) <= this.eval(exp[2], env);
+        }
+
+        if( exp[0] === '>=') {
+            return this.eval(exp[1], env) >= this.eval(exp[2], env);
+        }
+
         // to create a variable we go with the pattern of (dev x 0)
         // By default All variables are immutable
         // We must add functionality to make it mutable 
@@ -54,6 +70,30 @@ class Devil {
             const [_, name, value] = exp;
             return env.assign(name,this.eval(value,env)); 
         }
+
+        if (exp[0] === 'if') {
+            const [ _ , tag , condition, consequent, alternative] = exp;
+            if(this.eval(condition, env)) {
+                return this.eval(consequent, env);
+            }
+
+            return this.eval(alternative, env);
+        }
+
+        if( exp[0] === 'while') {
+            const [_, tag, condition, body] = exp;
+            let result;
+            while(this.eval(condition, env)) {
+                result = this.eval(body, env);
+            }
+            return result;
+        }
+
+        /* TBD
+        if (exp[0] === 'for') {
+            
+        }
+        */
 
         if (isVariableName(exp)) {
             return env.lookup(exp);
@@ -88,6 +128,7 @@ class Devil {
     }
 }
 
+//TODO: Break this off into its own helper dir
 function isNumber(exp) {
     return typeof exp === 'number';
 }
