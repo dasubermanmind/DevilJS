@@ -50,17 +50,11 @@ class Devil {
             return this.eval(exp[1], env) >= this.eval(exp[2], env);
         }
 
-        // to create a variable we go with the pattern of (dev x 0)
-        // By default All variables are immutable
-        // We must add functionality to make it mutable 
         if( exp[0] === 'dev') {
             const [_, name, value] = exp;
             return Object.freeze(env.define(name, this.eval(value, env)));
         }
 
-        // TODO: Mutable Case
-        // We can define a variable as mutable by using the keyword `mut`
-        // (dev mut x 0)
         if( exp[0] === 'dev' && exp[1] === 'mut') {
             const [_, name, value] = exp;
             return env.define(name,this.eval(value, env));
@@ -99,10 +93,6 @@ class Devil {
             return env.lookup(exp);
         }
 
-        // Now we begin by thinking of block scope, a sequence of expressions
-        // So as we create more and more blocks (scopes) each of them must retain
-        // and hold the records as well as know what has been defined within the
-        // parent
         if (exp[0] === 'begin') {
             const blockEnv = new Enviroment( {}, env);
             return this._evalBlock(exp, blockEnv);
