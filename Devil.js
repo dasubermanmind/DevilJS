@@ -55,6 +55,7 @@ class Devil {
             return Object.freeze(env.define(name, this.eval(value, env)));
         }
 
+        // We can define a variable as mutable by using the keyword `mut`
         if( exp[0] === 'dev' && exp[1] === 'mut') {
             const [_, name, value] = exp;
             return env.define(name,this.eval(value, env));
@@ -82,12 +83,6 @@ class Devil {
             }
             return result;
         }
-
-        /* TBD
-        if (exp[0] === 'for') {
-            
-        }
-        */
 
         if (isVariableName(exp)) {
             return env.lookup(exp);
