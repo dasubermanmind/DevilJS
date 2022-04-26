@@ -1,5 +1,6 @@
 const Devil = require('../Devil');
 const Environment = require('../Environment');
+const { test } = require('./test_helper/test-helper');
 
 const tests = [
   require('./self-eval-test.js'),
@@ -7,6 +8,7 @@ const tests = [
   require('./variable-test.js'),
   require('./block-test.js'),
   require('./if-test'),
+  require('./user-defined-function-test'),
 //  require('./iterations-test'),
   ];
 

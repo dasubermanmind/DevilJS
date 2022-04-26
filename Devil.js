@@ -84,6 +84,17 @@ class Devil {
             return result;
         }
 
+        if (exp[0] === 'def') {
+            const [_, tag, name, params, body] = exp;
+            const fn = {
+                params,
+                body,
+                env,
+            };
+
+            return env.define(name, fn);
+        }
+
         if (isVariableName(exp)) {
             return env.lookup(exp);
         }
@@ -95,15 +106,23 @@ class Devil {
 
 
         if (Array.isArray(exp)){
+            const activationRecord = {};
             const fnName = this.eval(exp[0], env);
             // check for native fn
             const args = exp.splice(1).map(arg => this.eval(arg,env));
 
             if(typeof fn === 'function'){
-                fn(...args);
+                return fn(...args);
             }
-        }
 
+            fn.params.forEach((param, idx) =>{
+                activationRecord[param] = args[idx];
+            });
+
+            const envenv = new Enviroment(activationRecord, fn.env);
+
+            return this.evalBody(fn.body, activationRecord);
+        }
 
         throw `Not implemented yet. The Devil can only work so fast. Please be patient. Issue is = ${JSON.stringify(exp)}`;
     }
@@ -122,6 +141,14 @@ class Devil {
 
         console.log(result);
         return result;
+    }
+
+    evalBody(body, env) {
+        if (body[0] === 'begin'){
+            return this._evalBlock(body, env);
+        }
+
+        return this.eval(body,env);
     }
 }
 
