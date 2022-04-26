@@ -126,7 +126,7 @@ class Devil {
 
         throw `Not implemented yet. The Devil can only work so fast. Please be patient. Issue is = ${JSON.stringify(exp)}`;
     }
-
+    // TODO: Break off into helper
     // We care about scope which block it is in; Sequence of expressions
     _evalBlock(block, env) {
         let result;

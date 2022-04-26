@@ -73,6 +73,14 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Code of Conduct
+JSDevil Code of Conduct has been taken from the Ruby code of conduct.
+
+1) Participants will be tolerant of opposing views.
+2) Participants must ensure that their language and actions are free of personal attacks and disparaging personal remarks.
+3) When interpreting the words and actions of others, participants should always assume good intentions.
+Behavior that can be reasonably considered harassment will not be tolerated.
+
 <!-- LICENSE -->
 ## License
 
