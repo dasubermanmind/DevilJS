@@ -93,6 +93,18 @@ class Devil {
             return this._evalBlock(exp, blockEnv);
         }
 
+
+        if (Array.isArray(exp)){
+            const fnName = this.eval(exp[0], env);
+            // check for native fn
+            const args = exp.splice(1).map(arg => this.eval(arg,env));
+
+            if(typeof fn === 'function'){
+                fn(...args);
+            }
+        }
+
+
         throw `Not implemented yet. The Devil can only work so fast. Please be patient. Issue is = ${JSON.stringify(exp)}`;
     }
 
